@@ -6,16 +6,16 @@ import RegulatoryCard from '../components/cards/RegulatoryCard';
 import StatisticsWidget from '../components/dashboard/StatisticsWidget';
 
 const quickAccess = [
-  'Market Access',
-  'Regulatory Repository',
-  'Accredited Laboratories',
-  'Pest & Disease Alerts'
+  { title: 'Market Access Intelligence', description: 'Explore SPS requirements, destination markets and export compliance information.' },
+  { title: 'Regulatory Repository', description: 'Access regulations, notifications, standards and official publications.' },
+  { title: 'Accredited Laboratories', description: 'Search accredited laboratories and available testing capabilities.' },
+  { title: 'Pest & Disease Alerts', description: 'View important SPS alerts and recommended actions.' },
 ];
 
 const updates = [
   'Latest SPS regulatory notifications',
   'Updated market access requirements',
-  'New laboratory accreditation information'
+  'New laboratory accreditation information',
 ];
 
 export default function Home() {
@@ -24,23 +24,25 @@ export default function Home() {
       <Header />
 
       <section className="hero">
-        <h1>National SPS Regulatory Information Platform</h1>
+        <span className="eyebrow">National Agri-Food Safety Authority</span>
+        <h1>Trusted SPS Regulatory Information Platform</h1>
         <p>
-          Trusted regulatory information for safe trade, compliance and stakeholder access.
+          A central digital platform for regulatory information, market access,
+          laboratory accreditation and stakeholder services.
         </p>
         <RegulatorySearch />
       </section>
 
-      <section>
+      <section className="section">
         <h2>Quick Access</h2>
         <div className="grid">
           {quickAccess.map((item) => (
-            <QuickAccessCard key={item} title={item} />
+            <QuickAccessCard key={item.title} {...item} />
           ))}
         </div>
       </section>
 
-      <section>
+      <section className="section highlight">
         <h2>Regulatory Intelligence</h2>
         <div className="grid">
           {updates.map((item) => (
@@ -49,15 +51,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="section">
         <h2>NAFSA Statistics</h2>
         <StatisticsWidget />
       </section>
 
-      <section>
-        <h2>Trade Facilitation</h2>
+      <section className="section psw-section">
+        <h2>Trade Facilitation Services</h2>
         <p>
-          Need transaction services? Visit Pakistan Single Window for trade processing.
+          Need transaction processing and trade submission services? Continue to
+          Pakistan Single Window.
         </p>
       </section>
 
