@@ -8,3 +8,29 @@ body {
   background: #f5f7f6;
   color: #1f2933;
 }
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  padding: 64px 0;
+}
+
+h1 {
+  color: #12304A;
+  font-size: 48px;
+}
+
+h2 {
+  color: #0B6B3A;
+  margin-top: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
