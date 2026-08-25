@@ -16,12 +16,21 @@ main {
 }
 
 .hero {
-  padding: 64px 0;
+  padding: 72px 0;
+  max-width: 900px;
+}
+
+.eyebrow {
+  color: #0B6B3A;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
 }
 
 h1 {
   color: #12304A;
-  font-size: 48px;
+  font-size: 52px;
+  line-height: 1.1;
 }
 
 h2 {
@@ -29,8 +38,29 @@ h2 {
   margin-top: 48px;
 }
 
+.section {
+  padding: 24px 0;
+}
+
+.highlight,
+.psw-section {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }
