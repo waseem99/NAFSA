@@ -5,22 +5,21 @@ on:
     branches:
       - nicl-wow-demo-plan
     paths:
-      - 'package.json'
-      - 'vercel.json'
       - 'prototype/**'
       - '.github/workflows/nicl-demo-ci.yml'
   pull_request:
     branches:
       - main
     paths:
-      - 'package.json'
-      - 'vercel.json'
       - 'prototype/**'
       - '.github/workflows/nicl-demo-ci.yml'
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: prototype
 
     steps:
       - name: Checkout
@@ -29,21 +28,19 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
-      - name: Install from repository root
+      - name: Install dependencies
         run: npm install
 
-      - name: Build through repository-root deployment shell
+      - name: Build Next.js prototype
         run: npm run build
 
       - name: Verify Next.js build output exists
-        run: test -f prototype/.next/BUILD_ID
+        run: test -f .next/BUILD_ID
 
       - name: Install Chromium for Playwright
-        working-directory: prototype
         run: npx playwright install --with-deps chromium
 
       - name: Run NICL presentation smoke tests
-        working-directory: prototype
         run: npm run test:demo
