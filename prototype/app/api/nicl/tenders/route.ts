@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { demoTenders } from '../../../../../data/nicl/demoContent';
+import { demoTenders } from '../../../../data/nicl/demoContent';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
