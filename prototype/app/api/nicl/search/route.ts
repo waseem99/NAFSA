@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { searchCorpus } from '../../../../../data/nicl/demoContent';
+import { searchCorpus } from '../../../../data/nicl/demoContent';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
