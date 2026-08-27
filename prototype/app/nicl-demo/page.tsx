@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import NICLHome from './nicl-demo/NICLHome';
+import NICLHome from './NICLHome';
 
 export const metadata: Metadata = {
   title: 'NICL Digital Experience — Interactive Demo | Codistan',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage() {
+export default function NICLDemoPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'GovernmentOrganization',

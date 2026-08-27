@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+  <title id="title">Conceptual institutional insurance building</title>
+  <desc id="desc">A stylized civic building with modern digital overlays, created for the NICL demo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dceae5"/><stop offset="1" stop-color="#b8d4ca"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#163f4f"/><stop offset="1" stop-color="#0a2633"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d6b53"/><stop offset="1" stop-color="#073e33"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#10283d" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="1000" height="800" fill="url(#sky)"/>
+  <circle cx="820" cy="155" r="88" fill="#f5e6bf" opacity=".85"/>
+  <path d="M0 590 C180 525 300 650 465 585 C650 512 770 610 1000 520 L1000 800 L0 800 Z" fill="#9fbeaf"/>
+  <path d="M0 650 C210 580 340 710 560 635 C735 578 842 648 1000 600 L1000 800 L0 800 Z" fill="#6e9c88" opacity=".78"/>
+  <g filter="url(#shadow)">
+    <rect x="235" y="260" width="545" height="360" rx="16" fill="#f3f5f2"/>
+    <rect x="288" y="210" width="440" height="70" rx="10" fill="#ede8dc"/>
+    <path d="M255 260 L500 115 L760 260 Z" fill="#d6cfbd"/>
+    <path d="M330 245 L500 150 L675 245 Z" fill="#0e5f4b" opacity=".9"/>
+    <rect x="320" y="310" width="66" height="246" rx="8" fill="#e7e3d7"/>
+    <rect x="430" y="310" width="66" height="246" rx="8" fill="#e7e3d7"/>
+    <rect x="540" y="310" width="66" height="246" rx="8" fill="#e7e3d7"/>
+    <rect x="650" y="310" width="66" height="246" rx="8" fill="#e7e3d7"/>
+    <rect x="395" y="355" width="220" height="205" rx="10" fill="url(#glass)"/>
+    <g stroke="#6fae99" stroke-width="4" opacity=".7"><path d="M425 355v205"/><path d="M465 355v205"/><path d="M505 355v205"/><path d="M545 355v205"/><path d="M585 355v205"/><path d="M395 410h220"/><path d="M395 465h220"/><path d="M395 520h220"/></g>
+    <rect x="214" y="570" width="590" height="56" rx="12" fill="url(#green)"/>
+    <text x="509" y="605" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#fff" text-anchor="middle">NATIONAL INSURANCE — DIGITAL EXPERIENCE CONCEPT</text>
+  </g>
+  <g opacity=".92">
+    <rect x="80" y="120" width="215" height="74" rx="16" fill="#ffffff"/>
+    <circle cx="116" cy="157" r="19" fill="#0d5f4b"/><path d="M109 157l5 5 10-12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="145" y="150" font-family="Arial" font-size="14" font-weight="700" fill="#10283d">Governed publishing</text><text x="145" y="171" font-family="Arial" font-size="12" fill="#627382">Trust by design</text>
+    <rect x="735" y="105" width="195" height="74" rx="16" fill="#ffffff"/>
+    <circle cx="772" cy="142" r="18" fill="#c69a4b"/><path d="M764 142h16M772 134v16" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <text x="802" y="136" font-family="Arial" font-size="14" font-weight="700" fill="#10283d">Smart discovery</text><text x="802" y="158" font-family="Arial" font-size="12" fill="#627382">Search + AI ready</text>
+  </g>
+</svg>
