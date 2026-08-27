@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test:demo": "playwright test tests/nicl-demo.spec.ts",
+    "test:demo:headed": "playwright test tests/nicl-demo.spec.ts --headed"
   },
   "dependencies": {
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
     "typescript": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest"
   }
 }
