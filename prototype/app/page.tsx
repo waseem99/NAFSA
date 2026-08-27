@@ -53,7 +53,7 @@ export default function Home() {
 
       <section className="section">
         <h2>NAFSA Statistics</h2>
-        <StatisticsWidget />
+        <StatisticsWidget label="Platform status" value="Demo" />
       </section>
 
       <section className="section psw-section">
