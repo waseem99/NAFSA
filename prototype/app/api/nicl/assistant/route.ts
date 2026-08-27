@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { assistantKnowledge } from '../../../../../data/nicl/demoContent';
+import { assistantKnowledge } from '../../../../data/nicl/demoContent';
 
 function selectAnswer(prompt: string) {
   const q = prompt.toLowerCase();
